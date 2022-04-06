@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Ropa+Sans:ital@1&display=swap');
+
+
+* {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5DB13;
+  padding: 30px 30px 0 px 10px;
+  box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
+  position: sticky;
+  z-index: 1;
+
+
+}
+
+.body {
+  display: flex;
+  font-family: 'Karla', sans-serif;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.navbar>a {
+  font-size: 25px;
+  margin: 0 20px 0 0;
+  text-decoration: none;
+  color: black;
+
+
+}
+
+.navbar>a:houver {
+  text-decoration: underline;
+
+}
+
+.header>img {
+  width: 128px;
+
+}
+
+/* .hamburguer-menu{
+background:none;
+cursor: pointer;
+display: none;
+
+} */
+/* início do corpo */
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  background: linear-gradient(#F5DB13, #F2B807);
+
+
+}
+
+.main>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 0 50px;
+
+}
+
+.main>div>h1 {
+  font-size: 42px;
+  font-weight: normal;
+  margin: 30px 0;
+  padding: 0 40px;
+
+}
+
+.main>div>p {
+  font-family: 'Karla';
+  font-size: 24px;
+  margin: 30px 0;
+  padding: 0 40px;
+
+}
+
+
+.btn {
+  display: flex;
+  font-size: 23px;
+  font-weight: normal;
+  background-color: #73D677;
+  margin-top: 20px;
+  margin-left: 120px;
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  box-shadow: 0 7px 0px #5eaf62;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+
+}
+
+
+/* Inicio do Footer */
+
+.footer {
+  display: flex;
+  /* flex:1; */
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(#F5DB13, #F2B807);
+  /* min-height: 100vh; */
+
+}
+
+@media(max-width: 650px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburguer-menu {
+    display: block;
+  }
+}
+
+@media(min-width : 651px) {
+  .navbar {
+    display: flex;
+  }
+
+  .hamburguer-menu {
+    display: none;
+  }
+}
