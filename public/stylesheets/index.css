@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Ropa+Sans:ital@1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Ropa+Sans:ital@1&display=swap");
 
 * {
   border: 0;
@@ -7,57 +6,67 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
-
 
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: #F5DB13;
+  background-color: #f5db13;
   padding: 30px 30px 0 px 10px;
   box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
   position: sticky;
+  font-weight: bold;
   z-index: 1;
-
-
 }
 
-.body {
+body {
   display: flex;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   flex-direction: column;
+  height: 100%;
   min-height: 100vh;
-
+  background: linear-gradient(#f5db13, #f2b807);
 }
 
-.navbar>a {
+.navbar > a {
   font-size: 25px;
   margin: 0 20px 0 0;
   text-decoration: none;
   color: black;
-
-
 }
 
-.navbar>a:houver {
+.navbar > a:houver {
   text-decoration: underline;
-
 }
 
-.header>img {
+.header > img {
   width: 128px;
-
 }
 
-/* .hamburguer-menu{
-background:none;
-cursor: pointer;
-display: none;
-
+/* .hamburguer-menu {
+  background: none;
+  cursor: pointer;
+  display: none;
+  
 } */
+
+.hamburguer-menu{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    margin-bottom: 10px;
+    display:none;
+}
+
+button:focus~a{
+  height: 250px;
+}
+
 /* início do corpo */
 
 .main {
@@ -66,41 +75,34 @@ display: none;
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
-  background: linear-gradient(#F5DB13, #F2B807);
-
-
 }
 
-.main>div {
+.main > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 0 0 50px;
-
 }
 
-.main>div>h1 {
+.main > div > h1 {
   font-size: 42px;
   font-weight: normal;
   margin: 30px 0;
   padding: 0 40px;
-
 }
 
-.main>div>p {
-  font-family: 'Karla';
+.main > div > p {
+  font-family: "Karla";
   font-size: 24px;
   margin: 30px 0;
   padding: 0 40px;
-
 }
-
 
 .btn {
   display: flex;
   font-size: 23px;
   font-weight: normal;
-  background-color: #73D677;
+  background-color: #73d677;
   margin-top: 20px;
   margin-left: 120px;
   width: 300px;
@@ -112,34 +114,56 @@ display: none;
   text-decoration: none;
   color: black;
   font-weight: bold;
-
-
 }
-
 
 /* Inicio do Footer */
 
 .footer {
   display: flex;
-  /* flex:1; */
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(#F5DB13, #F2B807);
-  /* min-height: 100vh; */
-
+  height: 100 px;
 }
 
-@media(max-width: 650px) {
+.hamburguer-menu {
+  display: none;
+}
+
+/* Responsividade Tablete */
+
+.hamburguer-menu:focus~a{
+  height: 250px;
+}
+
+
+
+@media (max-width: 748px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  header > img {
+    width: 128px;
+  }
+
   .navbar {
     display: none;
   }
 
-  .hamburguer-menu {
+.hamburguer-menu {
     display: block;
-  }
+    height: 30px;
 }
 
-@media(min-width : 651px) {
+}
+
+
+
+
+
+
+
+@media (min-width: 749px) {
   .navbar {
     display: flex;
   }
@@ -148,3 +172,65 @@ display: none;
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Respossividade Mobile  */
+
+
+
+
+/* @media (max-width: 480px) {
+  .header{
+    justify-content: space-around;
+  }
+
+  .navbar {
+    display: none;
+    justify-content: space-between;
+  }
+
+    .hamburguer-menu {
+    display: block;
+    height: 30px;
+        
+  }
+
+  .main{
+    display: block;
+  }
+
+  .main > div > p {
+    margin: 0 20px 10px 20px;
+
+  }
+
+
+  .main > div > h1{
+    margin: 0 20px 10px 20px;
+
+  }
+
+  .main > img{
+    width: -80px;
+    margin-left: -300px;
+  }
+
+  .btn{
+    margin: 10px 20px 40px 20px;
+  }
+
+  .footer{
+    flex-direction: column;
+    margin: 0 20px 0px 60px;
+  }
+  
+} */

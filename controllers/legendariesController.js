@@ -1,7 +1,7 @@
 const LegendariesService = require('../service/LegendariesServices')
-
-const controller = {
-  index: (request, response) => {  
+  
+const controller ={
+index: (request, response) => {  
     const { id } = request.params;
    const { name } = request.query;
 
@@ -9,7 +9,7 @@ const controller = {
 
    return response.json(legendary)
   },
-  create: (request, response) => {
+  create:(request, response) => {
     const {
       name,
       description,
