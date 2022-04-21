@@ -135,6 +135,39 @@ button:focus~a{
   height: 250px;
 }
 
+.botao-flutuante{
+  position: fixed;
+  bottom: 10px;
+  right: 10;
+  width: 64px;
+  height: 64px;
+  transition: all 1s ;
+}
+
+.botao-flutuante > img{
+  width: 100%;
+}
+
+.botao-flutuante> img:hover{
+  width: 96px;
+  height: 96px;
+}
+
+.dark-mode {
+  background-color: #545644;
+  background-color: #424948;
+}
+
+.dark-mode > nav > a {
+  color: #fff;
+}
+
+.dark-mode-main {
+  background: linear-gradient(#424948, #292d2c);
+  color: #fff;
+}
+
+
 
 
 @media (max-width: 748px) {
@@ -175,62 +208,3 @@ button:focus~a{
 
 
 
-
-
-
-
-
-
-
-
-/* Respossividade Mobile  */
-
-
-
-
-/* @media (max-width: 480px) {
-  .header{
-    justify-content: space-around;
-  }
-
-  .navbar {
-    display: none;
-    justify-content: space-between;
-  }
-
-    .hamburguer-menu {
-    display: block;
-    height: 30px;
-        
-  }
-
-  .main{
-    display: block;
-  }
-
-  .main > div > p {
-    margin: 0 20px 10px 20px;
-
-  }
-
-
-  .main > div > h1{
-    margin: 0 20px 10px 20px;
-
-  }
-
-  .main > img{
-    width: -80px;
-    margin-left: -300px;
-  }
-
-  .btn{
-    margin: 10px 20px 40px 20px;
-  }
-
-  .footer{
-    flex-direction: column;
-    margin: 0 20px 0px 60px;
-  }
-  
-} */
