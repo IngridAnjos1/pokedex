@@ -10,4 +10,4 @@ function isAuthenticated(request,response,next) {
     next();
 }
 
-module.exports = isAuthenticated
+module.exports = isAuthenticated;

@@ -6,9 +6,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Karla", sans-serif;
 }
 
-.header {
+.cabeçalho {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -37,11 +38,11 @@ body {
   color: black;
 }
 
-.navbar > a:houver {
+.navbar > a:hover {
   text-decoration: underline;
 }
 
-.header > img {
+.cabeçalho > img {
   width: 128px;
 }
 
@@ -69,7 +70,7 @@ button:focus~a{
 
 /* início do corpo */
 
-.main {
+.corpo-index {
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -77,21 +78,21 @@ button:focus~a{
   flex-direction: row-reverse;
 }
 
-.main > div {
+.corpo-index > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 0 0 50px;
 }
 
-.main > div > h1 {
+.corpo-index > div > h1 {
   font-size: 42px;
   font-weight: normal;
   margin: 30px 0;
   padding: 0 40px;
 }
 
-.main > div > p {
+.corpo-index > div > p {
   font-family: "Karla";
   font-size: 24px;
   margin: 30px 0;
@@ -129,32 +130,31 @@ button:focus~a{
   display: none;
 }
 
-/* Responsividade Tablete */
+
 
 .hamburguer-menu:focus~a{
   height: 250px;
 }
 
-.botao-flutuante{
+.botao-flutuante {
   position: fixed;
   bottom: 10px;
-  right: 10;
+  right: 10px;
   width: 64px;
   height: 64px;
-  transition: all 1s ;
+  transition: all 1s;
 }
 
-.botao-flutuante > img{
+.botao-flutuante > img {
   width: 100%;
 }
 
-.botao-flutuante> img:hover{
+.botao-flutuante:hover {
   width: 96px;
   height: 96px;
 }
 
 .dark-mode {
-  background-color: #545644;
   background-color: #424948;
 }
 
@@ -167,15 +167,14 @@ button:focus~a{
   color: #fff;
 }
 
-
-
+/* Responsividade Tablete */
 
 @media (max-width: 748px) {
-  header {
+ .cabeçalho {
     padding: 20px 10px;
   }
 
-  header > img {
+  .cabeçalho > img {
     width: 128px;
   }
 
@@ -189,12 +188,6 @@ button:focus~a{
 }
 
 }
-
-
-
-
-
-
 
 @media (min-width: 749px) {
   .navbar {
