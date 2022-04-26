@@ -9,7 +9,7 @@
   font-family: "Karla", sans-serif;
 }
 
-.cabeçalho {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -42,7 +42,7 @@ body {
   text-decoration: underline;
 }
 
-.cabeçalho > img {
+header > img {
   width: 128px;
 }
 
@@ -119,13 +119,15 @@ button:focus~a{
 
 /* Inicio do Footer */
 
-.footer {
+footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100 px;
+  height: 90px;
 }
 
+
+/* FIm do footer */
 .hamburguer-menu {
   display: none;
 }
@@ -158,14 +160,23 @@ button:focus~a{
   background-color: #424948;
 }
 
-.dark-mode > nav > a {
+.dark-mode > header > .cabeçalho > .navbar {
   color: #fff;
+  background-color: #424948;
 }
 
 .dark-mode-main {
   background: linear-gradient(#424948, #292d2c);
   color: #fff;
 }
+
+.dark-mode-footer{
+  background: linear-gradient(#424948, #292d2c);
+  color: #fff;
+
+}
+
+
 
 /* Responsividade Tablete */
 

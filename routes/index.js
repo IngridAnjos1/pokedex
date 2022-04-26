@@ -13,8 +13,8 @@ router.get('/', auth, function(req, res, next) {
 //   res.render('login');
 
 router.get('/dark-mode', (req,res) =>{
-  req.session.darkMode = !req.session.darlMode;
-  res.cookie('darkMode', req.session.darlMode);
+  req.session.darkMode = !req.session.darkMode;
+  res.cookie('darkMode', req.session.darkMode);
   res.redirect('/');
 
 

@@ -10,11 +10,10 @@
     <title> Pokedex </title>
     
   </head>
-  <body>
+  <body  >
 
-      <header class="<%=darkMode ? 'dark-mode' : '' %>">
-        
-      <section class="cabeçalho">
+      <header class="<%=darkMode ? 'dark-mode' : '' %>">        
+     
         <img src="images/Logo.png" alt ='logo-pokemon'>
                 
         <nav class="navbar" >
@@ -34,7 +33,7 @@
           </nav>
     
           <!-- <img class="hamburguer-menu" src="images/menu.svg" alt="hamburguer-menu"> -->
-      </section>
+      
       </header>
 
       <main class="<%=darkMode ? 'dark-mode-main' : '' %>">
@@ -55,9 +54,11 @@
         </section>
 
       </main>
-      <footer class="footer"> 
-         <p>Make with ❤️ for the PokéSpartans team Platzi Master</p>
-         <p>Ours Team</p>
+
+      <footer class="<%=darkMode ? 'dark-mode-footer' : '' %>"> 
+        <p>Make with ❤️ for the PokéSpartans team Platzi Master</p>
+        <p>Ours Team</p>
+       
       </footer>
   </body>
 </html>
